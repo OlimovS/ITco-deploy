@@ -2,6 +2,7 @@
   "name": "a-sample",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://olimovs.github.io/ITco/",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
     "@material-ui/icons": "^4.9.1",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "firebase-tools": "^8.4.3",
+    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.6.4",
@@ -21,6 +23,8 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
